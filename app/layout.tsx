@@ -68,7 +68,7 @@ export default function RootLayout({
         </a>
         <div className="relative flex min-h-screen flex-col">
           <Navbar />
-          <main id="main-content" className="relative mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 lg:px-8">
+          <main id="main-content" className="relative mx-auto w-full max-w-[92rem] flex-1 px-4 py-10 sm:px-6 lg:px-8">
             {children}
           </main>
           <Footer />
