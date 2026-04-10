@@ -9,6 +9,7 @@ import { navLinks, siteConfig } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
+import { BrandLogo } from "@/components/ui/brand-logo";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -21,14 +22,13 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-ink-950/85 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="group flex items-center gap-3" aria-label="DARV Digital home">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-accent/50 bg-accent/20 text-sm font-semibold text-accent-light">
-            DD
-          </div>
-          <div>
-            <p className="font-heading text-base text-white">DARV Digital</p>
-            <p className="text-xs text-mist-300">Technical Web Partner</p>
-          </div>
+        <Link
+          href="/"
+          className="inline-flex items-center gap-3 rounded-xl border border-transparent px-2 py-1 transition hover:border-white/10 hover:bg-white/[0.02]"
+          aria-label="DARV Digital home"
+        >
+          <BrandLogo variant="icon" priority className="max-h-14 w-auto max-w-[88px]" />
+          <span className="font-heading text-lg text-white">DARV Digital</span>
         </Link>
 
         <nav aria-label="Main navigation" className="hidden items-center gap-1 md:flex">

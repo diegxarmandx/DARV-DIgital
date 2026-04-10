@@ -65,6 +65,8 @@ export default function HomePage() {
         <div className="animate-fade-up-delay">
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-ink-900 to-ink-950 p-5 sm:p-6">
             <div className="pointer-events-none absolute inset-0 hero-grid opacity-35" aria-hidden="true" />
+            <div className="pointer-events-none absolute right-5 top-5 z-20 hidden sm:block" aria-hidden="true">
+            </div>
             <div className="relative z-10 space-y-4">
               <div className="rounded-2xl border border-white/15 bg-white/[0.03] p-4">
                 <div className="mb-4 flex items-center justify-between">

@@ -3,7 +3,6 @@ import { ArrowUpRight, BriefcaseBusiness, Compass } from "lucide-react";
 import { PageHero } from "@/components/sections/page-hero";
 import { PortfolioGrid } from "@/components/sections/portfolio-grid";
 import { Button } from "@/components/ui/button";
-import { CTASection } from "@/components/ui/cta-section";
 import { SectionHeader } from "@/components/ui/section-header";
 import { featuredProjects, portfolioProjects, siteConfig } from "@/lib/site-data";
 import { pageMetadata } from "@/lib/seo";
@@ -90,10 +89,6 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <CTASection
-        title="Let's design your next web build"
-        description="Tell us your business goals and we'll recommend a practical technical direction aligned with your timeline."
-      />
     </div>
   );
 }

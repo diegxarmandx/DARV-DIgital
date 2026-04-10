@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Code2, Lightbulb, ShieldCheck } from "lucide-react";
 
 import { PageHero } from "@/components/sections/page-hero";
@@ -26,18 +27,32 @@ export default function AboutPage() {
         <article className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-light">Founder</p>
           <h2 className="mt-3 font-heading text-3xl text-white">Diego A. Ramos Villanueva</h2>
+          <p className="mt-3 text-sm font-medium text-mist-200">
+            Software Engineer, Universidad de Puerto Rico - Mayaguez (2026)
+          </p>
           <p className="mt-5 text-base leading-relaxed text-mist-300">
-            DARV Digital is built around one core promise: give local businesses access to high-quality technical
-            web execution without unnecessary complexity. The focus is practical growth, clear communication, and
-            systems that are easy to operate after launch.
+            As a software engineer, Diego brings strong technical depth to every project, from architecture and
+            performance to clean implementation details that matter in real business operations.
           </p>
           <p className="mt-4 text-base leading-relaxed text-mist-300">
-            Every project is approached with business context first, then design and code decisions that support
-            lead quality, conversion clarity, and long-term maintainability.
+            Through DARV Digital, his focus is helping local businesses grow with technical web solutions that are
+            modern, reliable, and built to convert, while keeping the process clear and grounded in practical results.
           </p>
         </article>
 
-        <aside className="space-y-4 rounded-3xl border border-white/10 bg-gradient-to-br from-ink-900 to-ink-950 p-6">
+        <figure className="overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-b from-white/10 to-white/[0.04] p-2 shadow-card">
+          <Image
+            src="/images/DARV-CEO.png"
+            alt="Diego A. Ramos Villanueva, founder of DARV Digital"
+            width={1200}
+            height={1200}
+            className="h-full w-full rounded-2xl object-cover"
+            sizes="(max-width: 1024px) 100vw, 420px"
+            priority
+          />
+        </figure>
+
+        <aside className="space-y-4 rounded-3xl border border-white/10 bg-gradient-to-br from-ink-900 to-ink-950 p-6 sm:p-8 lg:col-span-2">
           <h3 className="font-heading text-2xl text-white">How we work</h3>
           <ul className="space-y-3 text-sm leading-relaxed text-mist-300">
             <li className="flex gap-3">

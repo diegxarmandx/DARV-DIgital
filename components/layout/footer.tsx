@@ -4,13 +4,14 @@ import { ArrowUpRight } from "lucide-react";
 import { navLinks, siteConfig } from "@/lib/site-data";
 
 import { Button } from "@/components/ui/button";
+import { BrandLogo } from "@/components/ui/brand-logo";
 
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-ink-950">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.2fr,0.8fr,0.8fr] lg:px-8">
         <div className="space-y-4">
-          <h2 className="font-heading text-2xl text-white">DARV Digital</h2>
+          <BrandLogo className="max-h-24 w-auto max-w-[380px] sm:max-h-28 sm:max-w-[460px]" />
           <p className="max-w-md text-sm leading-relaxed text-mist-300">{siteConfig.tagline}</p>
           <Button href="/contact" size="sm">
             {siteConfig.primaryCta}
