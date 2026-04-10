@@ -96,67 +96,53 @@ export const addOnCapabilities = [
 
 export type PortfolioProject = {
   title: string;
-  category: "Contractor" | "Restaurant" | "Local Service" | "Logistics";
+  category: "Professional Services" | "Logistics" | "E-commerce";
   summary: string;
   challenge: string;
   result: string;
   accent: string;
+  url: string;
+  snapshot: string;
 };
 
 export const featuredProjects: PortfolioProject[] = [
   {
-    title: "Isla Build Contractors",
-    category: "Contractor",
+    title: "IPPS Puerto Rico",
+    category: "Professional Services",
     summary:
-      "Modern multi-page site with quote request funnel for a residential construction team.",
-    challenge: "The old site looked dated and generated low-quality inquiries.",
-    result: "Improved lead quality with structured quote requests and clearer service pages.",
-    accent: "from-blue-500/40 to-cyan-400/20"
+      "Corporate site with clear service structure and conversion-focused contact pathways for Puerto Rico operations.",
+    challenge: "The business needed a modern website that communicated credibility and services quickly.",
+    result: "Stronger first impression and a clearer path for qualified inquiries.",
+    accent: "from-blue-500/40 to-cyan-400/20",
+    url: "https://www.ippspr.com/",
+    snapshot: "/project-snapshots/ippsHero.png"
   },
   {
-    title: "Casa Brava Kitchen",
-    category: "Restaurant",
-    summary: "Menu-first website with online reservation flow and event booking intake.",
-    challenge: "Guests were calling for basic details and reservation coordination was manual.",
-    result: "Reservation requests became more organized and easier for staff to manage.",
-    accent: "from-cyan-500/40 to-teal-300/20"
+    title: "Isla Prime Logistics",
+    category: "Logistics",
+    summary:
+      "Operational business website designed to present logistics capabilities clearly and route new client requests efficiently.",
+    challenge: "The team needed a cleaner digital presence that made service scope easy to understand.",
+    result: "Improved clarity for prospects and a more structured request flow from the site.",
+    accent: "from-cyan-500/40 to-teal-300/20",
+    url: "https://www.islaprimelogistics.com/",
+    snapshot: "/project-snapshots/islaprimelogisticsHero.png"
   },
   {
-    title: "MetroFix Services",
-    category: "Local Service",
-    summary: "Service-area focused website with fast contact pathways and urgent-request capture.",
-    challenge: "Prospects were not sure which services or locations were covered.",
-    result: "Clearer pages reduced confusion and increased relevant service inquiries.",
-    accent: "from-sky-500/40 to-indigo-400/20"
+    title: "Lucky Fragrances",
+    category: "E-commerce",
+    summary:
+      "Product-focused shopping experience with stronger merchandising structure and a cleaner path from browse to purchase.",
+    challenge: "The brand needed a polished storefront experience that felt trustworthy and easy to navigate.",
+    result: "More consistent product discovery and a better user path to checkout.",
+    accent: "from-sky-500/40 to-indigo-400/20",
+    url: "https://www.luckyfragrances.com/",
+    snapshot: "/project-snapshots/LuckyFragranceHero.png"
   }
 ];
 
 export const portfolioProjects: PortfolioProject[] = [
-  ...featuredProjects,
-  {
-    title: "Rio Cargo Dispatch",
-    category: "Logistics",
-    summary: "Operations website with shipment inquiry forms and client portal entry points.",
-    challenge: "Inbound requests lacked the details the team needed to quote quickly.",
-    result: "Form standardization cut down quoting delays and improved response speed.",
-    accent: "from-blue-600/40 to-teal-400/20"
-  },
-  {
-    title: "Prime Shade Installations",
-    category: "Contractor",
-    summary: "Conversion-focused redesign for a solar shading and pergola contractor.",
-    challenge: "The previous website did not explain process, materials, or pricing ranges.",
-    result: "Stronger trust signals and better-qualified inquiries from homeowners.",
-    accent: "from-cyan-500/40 to-blue-400/20"
-  },
-  {
-    title: "North Coast Cleaning Co.",
-    category: "Local Service",
-    summary: "Local SEO-ready service pages with recurring booking request flow.",
-    challenge: "Most leads came through social media messages with little structure.",
-    result: "Centralized website inquiries made scheduling and follow-up more consistent.",
-    accent: "from-teal-400/40 to-sky-400/20"
-  }
+  ...featuredProjects
 ];
 
 export type ProcessStep = {

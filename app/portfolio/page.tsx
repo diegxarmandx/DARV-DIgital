@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Portfolio",
   description:
-    "Explore DARV Digital project examples across contractors, restaurants, logistics, and local service businesses.",
+    "Explore DARV Digital live project examples across professional services, logistics, and e-commerce.",
   path: "/portfolio"
 });
 
@@ -23,10 +23,9 @@ export default function PortfolioPage() {
         description="These examples show how we combine modern design and technical execution to create practical, trusted digital experiences."
       >
         <div className="flex flex-wrap gap-3 text-xs text-mist-200">
-          <span className="rounded-full border border-white/15 bg-white/[0.03] px-3 py-1">Contractors</span>
-          <span className="rounded-full border border-white/15 bg-white/[0.03] px-3 py-1">Restaurants</span>
-          <span className="rounded-full border border-white/15 bg-white/[0.03] px-3 py-1">Local Services</span>
+          <span className="rounded-full border border-white/15 bg-white/[0.03] px-3 py-1">Professional Services</span>
           <span className="rounded-full border border-white/15 bg-white/[0.03] px-3 py-1">Logistics</span>
+          <span className="rounded-full border border-white/15 bg-white/[0.03] px-3 py-1">E-commerce</span>
         </div>
       </PageHero>
 
@@ -43,7 +42,7 @@ export default function PortfolioPage() {
         <SectionHeader
           eyebrow="Case Study Highlights"
           title="What success looked like"
-          description="Each project focused on clear service communication, better lead quality, and simpler team workflows."
+          description="Each project focused on practical outcomes: clearer communication, stronger trust, and better conversion pathways."
         />
         <div className="grid gap-6 lg:grid-cols-3">
           {featuredProjects.map((project) => (
@@ -61,6 +60,14 @@ export default function PortfolioPage() {
                   <span className="font-semibold text-mist-100">Result:</span> {project.result}
                 </p>
               </div>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-accent-light transition hover:text-accent"
+              >
+                Visit Live Site <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+              </a>
             </article>
           ))}
         </div>
