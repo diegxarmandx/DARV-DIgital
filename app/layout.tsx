@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Manrope, Sora } from "next/font/google";
+import { Manrope, Sora, Inter } from "next/font/google";
 
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { siteConfig } from "@/lib/site-data";
 
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const headingFont = Sora({
   variable: "--font-heading",
@@ -55,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={cn("font-sans", inter.variable)}>
       <body className={`${headingFont.variable} ${bodyFont.variable} font-body antialiased`}>
         <a
           href="#main-content"
